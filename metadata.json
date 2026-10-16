@@ -1,0 +1,6 @@
+{
+  "name": "NeuroER - Emergency Neurology Case Notes",
+  "description": "Offline-first ER neurology case documentation and patient tracking notebook for acute stroke, seizures, altered mental status, and emergency consultations with IndexedDB storage, NIHSS calculator, and neuroimaging viewer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

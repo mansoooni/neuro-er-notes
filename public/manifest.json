@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "NeuroER Case Notes",
+  "short_name": "NeuroER",
+  "description": "Offline-First Emergency Neurology Case Notebook & Patient Tracker",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

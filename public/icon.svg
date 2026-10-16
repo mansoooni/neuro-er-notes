@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  
+  <!-- Pulse / ECG grid ring -->
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#334155" stroke-width="4" stroke-dasharray="6 8" opacity="0.6"/>
+  <circle cx="256" cy="256" r="214" fill="none" stroke="#0ea5e9" stroke-width="2" opacity="0.3"/>
+
+  <!-- Stylized Brain + Emergency Lightning / Pulse Motif -->
+  <g filter="url(#glow)">
+    <!-- Left hemisphere curves -->
+    <path d="M236 140 C190 140 150 170 150 215 C150 228 154 240 160 250 C140 262 130 282 130 306 C130 340 160 366 195 368 C205 385 220 392 236 392 Z" 
+          fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right hemisphere curves -->
+    <path d="M276 140 C322 140 362 170 362 215 C362 228 358 240 352 250 C372 262 382 282 382 306 C382 340 352 366 317 368 C307 385 292 392 276 392 Z" 
+          fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Central sulcus / fissure -->
+    <line x1="256" y1="140" x2="256" y2="390" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 16"/>
+
+    <!-- Sharp acute ECG stroke spike across center -->
+    <path d="M120 266 L195 266 L210 230 L228 310 L256 160 L284 340 L302 245 L317 266 L392 266" 
+          fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Focal Red emergency dot for hyperacute stroke code -->
+    <circle cx="340" cy="210" r="14" fill="#ef4444"/>
+    <circle cx="340" cy="210" r="22" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.7"/>
+  </g>
+</svg>
